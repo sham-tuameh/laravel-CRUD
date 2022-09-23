@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>console.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #a9b7c6;}
+.s3 { color: #808080;}
+.s4 { color: #6a8759;}
+.s5 { color: #9876aa;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+console.php</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?php</span>
+
+<span class="s0">use </span><span class="s2">Illuminate</span><span class="s1">\</span><span class="s2">Foundation</span><span class="s1">\</span><span class="s2">Inspiring</span><span class="s0">;</span>
+<span class="s0">use </span><span class="s2">Illuminate</span><span class="s1">\</span><span class="s2">Support</span><span class="s1">\</span><span class="s2">Facades</span><span class="s1">\</span><span class="s2">Artisan</span><span class="s0">;</span>
+
+<span class="s3">/* 
+|-------------------------------------------------------------------------- 
+| Console Routes 
+|-------------------------------------------------------------------------- 
+| 
+| This file is where you may define all of your Closure based console 
+| commands. Each Closure is bound to a command instance allowing a 
+| simple approach to interacting with each command's IO methods. 
+| 
+*/</span>
+
+<span class="s2">Artisan</span><span class="s1">::</span><span class="s2">command</span><span class="s1">(</span><span class="s4">'inspire'</span><span class="s0">, function </span><span class="s1">() {</span>
+    <span class="s5">$this</span><span class="s1">-&gt;</span><span class="s2">comment</span><span class="s1">(</span><span class="s2">Inspiring</span><span class="s1">::</span><span class="s2">quote</span><span class="s1">())</span><span class="s0">;</span>
+<span class="s1">})-&gt;</span><span class="s2">purpose</span><span class="s1">(</span><span class="s4">'Display an inspiring quote'</span><span class="s1">)</span><span class="s0">;</span>
+</pre>
+</body>
+</html>
